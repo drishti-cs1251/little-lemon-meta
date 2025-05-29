@@ -6,23 +6,52 @@ const menuItems = [
     title: "Matcha Latte",
     description: "Creamy matcha green tea latte with frothy milk.",
     price: "$5.00",
-    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80",
+    image: "https://i.pinimg.com/736x/37/2f/d0/372fd0a42ef60809bfce82506105f053.jpg",
   },
   {
     id: 2,
     title: "Sakura Mochi",
     description: "Traditional cherry blossom rice cake wrapped in pickled leaf.",
     price: "$4.00",
-    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80",
+    image: "https://i.pinimg.com/736x/0e/9f/63/0e9f63caff0f70a6a29757cbe7cbd47c.jpg",
   },
   {
     id: 3,
     title: "Sencha Green Tea",
     description: "Freshly brewed sencha leaves for a pure green tea taste.",
     price: "$3.00",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+    image: "https://i.pinimg.com/736x/91/ee/20/91ee2053cbd56a8f246b0893466fd17d.jpg",
+  },
+  {
+    id: 4,
+    title: "Yuzu Citrus Soda",
+    description: "Refreshing soda infused with zesty yuzu citrus flavors.",
+    price: "$4.50",
+    image: "https://i.pinimg.com/736x/01/b3/e7/01b3e7b569e3d12cc3243c1d68a62546.jpg",
+  },
+  {
+    id: 5,
+    title: "Miso Soup",
+    description: "Warm and comforting soup with tofu, seaweed, and green onions.",
+    price: "$3.50",
+    image: "https://i.pinimg.com/736x/9a/bf/1a/9abf1a21c8e7919c94f08f7b8c75cf7b.jpg",
+  },
+  {
+    id: 6,
+    title: "Green Tea Ice Cream",
+    description: "Creamy, sweet green tea flavored ice cream.",
+    price: "$4.00",
+    image: "https://i.pinimg.com/736x/10/5e/47/105e478e793b0ed07cf1527007000752.jpg",
+  },
+  {
+    id: 7,
+    title: "Taiyaki (Fish-shaped Cake)",
+    description: "Sweet red bean-filled fish-shaped cake, fresh and warm.",
+    price: "$3.75",
+    image: "https://i.pinimg.com/736x/e3/6e/4b/e36e4bce6bc1ebe8c1d69f084fdc64d1.jpg",
   },
 ];
+
 
 const Menu = () => {
   return (
