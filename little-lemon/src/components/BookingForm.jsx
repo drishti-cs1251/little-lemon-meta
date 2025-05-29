@@ -92,7 +92,7 @@ const BookingForm = () => {
 
 const styles = {
   form: {
-    maxWidth: "400px",
+    
     margin: "2rem auto",
     display: "flex",
     flexDirection: "column",

@@ -39,3 +39,62 @@ footer {
   color: #264653;
   font-size: 0.9rem;
 }
+body {
+  background: linear-gradient(135deg, #FAF3EB 0%, #E9E4D4 100%);
+  color: #264653;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sawarabi Mincho', serif;
+  color: #6E4B3A;
+}
+
+section {
+  background-color: rgba(255 255 255 / 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+button {
+  background-color: #A8C686;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgb(168 198 134 / 0.4);
+}
+
+button:hover {
+  background-color: #90b069;
+  box-shadow: 0 6px 16px rgb(144 176 105 / 0.6);
+}
+
+nav ul li a {
+  font-weight: 600;
+  padding-bottom: 6px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #A8C686;
+  border-bottom: 2px solid #A8C686;
+}
+
+img {
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgb(0 0 0 / 0.1);
+}
+
