@@ -5,6 +5,7 @@ body, html, #root {
   font-family: 'Noto Sans JP', sans-serif;
   color: #264653;
   line-height: 1.6;
+  background: linear-gradient(135deg, #FAF3EB 0%, #E9E4D4 100%);
 }
 
 main {
@@ -27,7 +28,6 @@ nav {
   align-items: center;
 }
 
-/* Footer */
 footer {
   width: 90%;
   max-width: 1200px;
@@ -38,11 +38,6 @@ footer {
   padding: 1rem 0;
   color: #264653;
   font-size: 0.9rem;
-}
-body {
-  background: linear-gradient(135deg, #FAF3EB 0%, #E9E4D4 100%);
-  color: #264653;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -98,3 +93,10 @@ img:hover {
   box-shadow: 0 12px 25px rgb(0 0 0 / 0.1);
 }
 
+.card {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}

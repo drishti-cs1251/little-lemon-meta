@@ -2,62 +2,123 @@ import React from "react";
 
 const testimonials = [
   {
-    id: 1,
-    name: "Sakura Tanaka",
-    text: "The atmosphere at Little Lemon takes me straight to a peaceful Japanese garden. The matcha latte is divine!",
+    name: "Aarav Sharma",
+    photo: "https://randomuser.me/api/portraits/men/75.jpg",
+    review: "A peaceful escape — the matcha and ambience were perfect.",
+    rating: 4.5,
   },
   {
-    id: 2,
-    name: "Kenji Yamamoto",
-    text: "Authentic taste and wonderful service. I keep coming back every week!",
+    name: "Meera Kapoor",
+    photo: "https://randomuser.me/api/portraits/women/65.jpg",
+    review: "Beautiful tea house vibe. The sakura tea stole my heart.",
+    rating: 5,
   },
   {
-    id: 3,
-    name: "Maya Singh",
-    text: "Love the warm, natural vibe here. The cherry blossom decor is so calming.",
+    name: "Rajiv Menon",
+    photo: "https://randomuser.me/api/portraits/men/66.jpg",
+    review: "Exceptional service and flavors. The place and ambience is unforgettable.",
+    rating: 4.8,
   },
+  {
+    name: "Priya Das",
+    photo: "https://randomuser.me/api/portraits/women/67.jpg",
+    review: "The mochi was delightful and the green tea divine!",
+    rating: 5,
+  },
+  {
+  name: "Kavya Iyer",
+  photo: "https://randomuser.me/api/portraits/women/79.jpg",
+  review: "Loved the minimalist interior and subtle umami flavors. Truly calming!",
+  rating: 4.7,
+},
+{
+  name: "Neel Verma",
+  photo: "https://randomuser.me/api/portraits/men/81.jpg",
+  review: "An elegant place with authentic Japanese dishes. The miso soup was perfect.",
+  rating: 5,
+},
+
 ];
+
+const StarRating = ({ rating }) => {
+  const stars = [];
+  const fullStars = Math.floor(rating);
+  const hasHalfStar = rating - fullStars >= 0.5;
+
+  for (let i = 0; i < fullStars; i++) {
+    stars.push("★");
+  }
+  if (hasHalfStar) stars.push("☆");
+
+  return <span style={{ color: "#FFD700" }}>{stars.join(" ")}</span>;
+};
 
 const Testimonials = () => {
   return (
-    <section style={styles.testimonialSection}>
-      <h2 style={styles.heading}>What Our Customers Say</h2>
-      {testimonials.map(({ id, name, text }) => (
-        <blockquote key={id} style={styles.blockquote}>
-          <p>"{text}"</p>
-          <footer style={styles.footer}>— {name}</footer>
-        </blockquote>
-      ))}
+    <section style={styles.container}>
+      <h2 style={styles.heading}>What Our Guests Say</h2>
+      <div style={styles.cardGrid}>
+        {testimonials.map((item, index) => (
+          <div key={index} style={styles.card}>
+            <img src={item.photo} alt={item.name} style={styles.image} />
+            <h3 style={styles.name}>{item.name}</h3>
+            <div style={styles.stars}><StarRating rating={item.rating} /></div>
+            <p style={styles.review}>"{item.review}"</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
 
 const styles = {
-  testimonialSection: {
-    
-    margin: "3rem auto",
-    padding: "0 1rem",
+  container: {
+    backgroundColor: "#415A56",
+    padding: "3rem 1rem",
+    textAlign: "center",
+    fontFamily: "'Noto Sans JP', sans-serif",
   },
   heading: {
-    fontFamily: "'Sawarabi Mincho', serif",
-    color: "#6E4B3A",
+    color: "#fff",
     marginBottom: "2rem",
+    fontSize: "2rem",
+    fontFamily: "'Sawarabi Mincho', serif",
+  },
+  cardGrid: {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    gap: "2rem",
+  },
+  card: {
+    backgroundColor: "#fff",
+    borderRadius: "20px",
+    padding: "1.5rem",
+    width: "250px",
     textAlign: "center",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
   },
-  blockquote: {
-    backgroundColor: "#FAF3EB",
-    borderLeft: "6px solid #F8C8DC",
-    padding: "1rem 2rem",
-    fontStyle: "italic",
-    marginBottom: "1.5rem",
-    fontFamily: "'Noto Sans JP', sans-serif",
+  image: {
+    width: "80px",
+    height: "80px",
+    borderRadius: "50%",
+    objectFit: "cover",
+    marginBottom: "1rem",
+  },
+  name: {
+    fontWeight: "bold",
     color: "#264653",
+    marginBottom: "0.5rem",
   },
-  footer: {
-    marginTop: "0.5rem",
-    fontWeight: "700",
-    textAlign: "right",
-    color: "#6E4B3A",
+  stars: {
+    fontSize: "1rem",
+    marginBottom: "0.5rem",
+  },
+  review: {
+    fontStyle: "italic",
+    color: "#555",
+    fontSize: "0.95rem",
+    lineHeight: "1.4",
   },
 };
 

@@ -6,10 +6,12 @@ import Home from "./pages/Home";
 import MenuPage from "./pages/MenuPage";
 import Booking from "./pages/Booking";
 
+
 const App = () => {
   return (
     <>
       <Navbar />
+      
       <main style={{ minHeight: "80vh" }}>
         <Routes>
           <Route path="/" element={<Home />} />
