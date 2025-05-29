@@ -1,9 +1,8 @@
 # Little Lemon Restaurant Website
 
-A modern, responsive restaurant website built with React.  
-The app features multiple components organized into three main pages: Home, Booking, and Menu.
+A responsive React application developed as part of the  **Meta Front-End Developer Capstone Project**.
 
----
+This modern web application showcases a fictional restaurant, Little Lemon, with a clean, user-friendly design. Built using React, the app features a modular structure with reusable components and responsive layouts optimized for various screen sizes.
 
 ## Features
 
@@ -14,93 +13,91 @@ The app features multiple components organized into three main pages: Home, Book
   Contains a Booking Form for customers to reserve tables easily.
 
 - **Menu Page:**  
-  Displays the restaurant’s menu items dynamically.
-
-- **Common Components:**  
-  - Navbar with navigation links  
-  - Footer with contact details, social media, and creator credit
-
----
+  Displays the restaurant’s menu items dynamically
 
 ## Components Overview
 
 - **Navbar:** Responsive navigation bar with links to all pages.  
-- **About:** Restaurant background and story section.  
+- **About:** Restaurant background .  
 - **BookingForm:** Form for booking tables with validation.  
-- **Footer:** Contact info, address, social links, and creator tag.  
-- **Menu:** Displays menu items, categorized and styled.  
-- **Testimonials:** Customer reviews and feedback section.
+- **Footer:** Contact info, address, social links.  
+- **Menu:** Displays menu items.  
+- **Testimonials:** Customer reviews.
 
----
+## 📁 Project Structure
 
-## Project Structure
-
+```
 src/
-│
 ├── components/
-│ ├── About.jsx
-│ ├── BookingForm.jsx
-│ ├── Footer.jsx
-│ ├── Menu.jsx
-│ ├── Navbar.jsx
-│ └── Testimonials.jsx
-│
+│   ├── About.jsx
+│   ├── BookingForm.jsx
+│   ├── Footer.jsx
+│   ├── Menu.jsx
+│   ├── Navbar.jsx
+│   └── Testimonials.jsx
 ├── pages/
-│ ├── Home.jsx
-│ ├── Booking.jsx
-│ └── MenuPage.jsx
-│
+│   ├── Home.jsx
+│   ├── Booking.jsx
+│   └── MenuPage.jsx
 ├── App.jsx
 └── index.js
+```
 
-
----
 
 ## Installation
 
 1. Clone the repo:
 
-   ```bash
-   git clone https://github.com/yourusername/little-lemon-restaurant.git
-Navigate to the project folder:
+    ```bash
+    git clone https://github.com/yourusername/little-lemon-restaurant.git
+    ```
 
-bash
-Copy code
-cd little-lemon-restaurant
-Install dependencies:
+2. Navigate to the project folder:
 
-bash
-Copy code
-npm install
-Usage
-Run the development server:
+    ```bash
+    cd little-lemon-
+    ```
 
-bash
-Copy code
-npm start
-Open your browser and visit http://localhost:3000 to see the app.
+3. Install dependencies:
 
-How to Navigate
-Home: Overview, About, and Testimonials
+    ```bash
+    npm install
+    ```
 
-Booking: Fill out the form to reserve a table
+4. Run the development server:
 
-Menu: Browse the menu offerings
+    ```bash
+    npm start
+    ```
 
-Customization
-Update contact info, social media links, and creator tag in Footer.jsx.
+## How to Navigate
 
-Modify menu items in Menu.jsx.
+- Home: Overview, About, and Testimonials
 
-Adjust form fields and validation in BookingForm.jsx.
+- Booking: Fill out the form to reserve a table
 
-Style components via your preferred CSS or CSS-in-JS method.
+- Menu: Browse the menu offerings
 
-Technologies Used
-React
+## Technologies Used
+1. React
+2. React Router
+3. React Icons for social and UI icons
+4. CSS Modules / Inline CSS / Styled Components
 
-React Router (if routing is used for pages)
+## Pictures
 
-React Icons for social and UI icons
+ ![image](https://github.com/user-attachments/assets/4f75becc-b4d5-48bc-9ea4-8101c385b312)
+ 
+![image](https://github.com/user-attachments/assets/249317cf-6e91-4149-b679-e58ab43201f7)
 
-CSS Modules / Inline CSS / Styled Components
+![image](https://github.com/user-attachments/assets/f4a4b6df-9bea-4842-a173-047ea85bc64c)
+
+![image](https://github.com/user-attachments/assets/5f72c860-63c3-4f92-b3e3-3c67ce271ff6)
+
+## 📸 Image Credits
+
+- **Menu images** were sourced from [Pinterest](https://www.pinterest.com/) for illustrative purposes only.
+- **Testimonial images** are random placeholder photos used for UI demonstration.
+
+
+
