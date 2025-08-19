@@ -4,6 +4,9 @@ A responsive React application developed as part of the  **Meta Front-End Develo
 
 This modern web application showcases a fictional restaurant, Little Lemon, with a clean, user-friendly design. Built using React, the app features a modular structure with reusable components and responsive layouts optimized for various screen sizes.
 
+## Live Link
+https://little-lemon-meta-nf7i7qurf-drishti-guptas-projects.vercel.app/
+
 ## Features
 
 - **Home Page:**  
